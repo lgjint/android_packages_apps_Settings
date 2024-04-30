@@ -147,13 +147,13 @@ public class BlockingPrefWithSliceController extends BasePreferenceController im
 
     @VisibleForTesting
     void updatePreferenceFromSlice(Slice slice) {
-        if (TextUtils.isEmpty(mSliceIntentAction)
-                || TextUtils.isEmpty(mExtraIntent)
-                || TextUtils.isEmpty(mSlicePendingIntentAction)
-                || TextUtils.isEmpty(mExtraPendingIntent)) {
-            Log.d(TAG, "No configs");
-            return;
-        }
+        // if (TextUtils.isEmpty(mSliceIntentAction)
+        //         || TextUtils.isEmpty(mExtraIntent)
+        //         || TextUtils.isEmpty(mSlicePendingIntentAction)
+        //         || TextUtils.isEmpty(mExtraPendingIntent)) {
+        //     Log.d(TAG, "No configs");
+        //     return;
+        // }
         if (slice == null || slice.hasHint(HINT_PERMISSION_REQUEST)) {
             Log.d(TAG, "Current slice: " + slice);
             removePreferenceListFromPreferenceCategory();
