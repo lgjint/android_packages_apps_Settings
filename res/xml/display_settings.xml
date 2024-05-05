@@ -100,6 +100,14 @@
             android:summary="@string/network_traffic_state_summary"
             android:fragment="com.android.settings.display.NetworkTrafficSettings"
             android:defaultValue="false" />
+
+        <!-- Clipboard overlay toggle -->
+        <co.aospa.framework.preference.SecureSettingSwitchPreference
+            android:key="show_clipboard_overlay"
+            android:title="@string/show_clipboard_overlay_title"
+            android:summary="@string/show_clipboard_overlay_summary"
+            android:defaultValue="true"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
